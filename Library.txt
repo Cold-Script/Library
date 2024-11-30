@@ -267,7 +267,7 @@ do
     UIPadding.Parent = TabContainer
     UIPadding.PaddingLeft = UDim.new(0, 3)
     UIPadding.PaddingTop = UDim.new(0, 3)
-    local Bottom = Instance.new("Frame")
+--[[    local Bottom = Instance.new("Frame")
     Bottom.Name = "Bottom"
     Bottom.Parent = Main
     Bottom.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
@@ -353,7 +353,7 @@ do
     StaminaBarUICorner1.Parent = MainPage
     
     
---[[local UserID = game.Players.LocalPlayer.UserId
+local UserID = game.Players.LocalPlayer.UserId
     
     local ThumbType = Enum.ThumbnailType.HeadShot
     local ThumbSize = Enum.ThumbnailSize.Size420x420
