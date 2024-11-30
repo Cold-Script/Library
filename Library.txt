@@ -267,7 +267,7 @@ do
     UIPadding.Parent = TabContainer
     UIPadding.PaddingLeft = UDim.new(0, 3)
     UIPadding.PaddingTop = UDim.new(0, 3)
---[[    local Bottom = Instance.new("Frame")
+    local Bottom = Instance.new("Frame")
     Bottom.Name = "Bottom"
     Bottom.Parent = Main
     Bottom.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
@@ -303,7 +303,7 @@ do
     UserImageCorner1.Name = "UserImageCorner"
     UserImageCorner1.Parent = Menu_Setting
     
-    local BtnStroke = Instance.new("UIStroke")
+--[[    local BtnStroke = Instance.new("UIStroke")
     BtnStroke.Name = "BtnStroke"
     BtnStroke.Parent = Menu_Setting
     BtnStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
