@@ -188,7 +188,7 @@ do
         UI.Enabled = false
         else
             Main:TweenSize(
-            UDim2.new(0, 520, 0, 450),
+            UDim2.new(0, 520, 0, 600),
             Enum.EasingDirection.Out,
             Enum.EasingStyle.Quart,
             1,
