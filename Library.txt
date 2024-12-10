@@ -145,7 +145,7 @@ do
 
 
 
-    function library:Window(text)
+    function library:Window(text, size)
     local Main = Instance.new("Frame")
     local Imgaemain = Instance.new("ImageLabel")
     local UICorner = Instance.new("UICorner")
@@ -162,7 +162,7 @@ do
     Main.Parent = UI
     Main.Position = UDim2.new(0.5, 0, 0.5, 0)
     Main.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-    Main.Size = UDim2.new(0, 520, 0, 320)
+    Main.Size = size or UDim2.new(0, 520, 0, 320)
     Main.ClipsDescendants = true
     Main.AnchorPoint = Vector2.new(0.5, 0.5)
     Main.BackgroundTransparency = 0
@@ -174,7 +174,7 @@ do
     UiToggle_UiStroke256.Name = "UiToggle_UiStroke1"
     UiToggle_UiStroke256.Parent = Main
     
-    UICorner.CornerRadius = UDim.new(0, 2)
+    UICorner.CornerRadius = UDim.new(0, 5)
     UICorner.Parent = Main
     
     local uitoggled = false
@@ -188,7 +188,7 @@ do
         UI.Enabled = false
         else
             Main:TweenSize(
-            UDim2.new(0, 520, 0, 600),
+            UDim2.new(0, 520, 0, 450),
             Enum.EasingDirection.Out,
             Enum.EasingStyle.Quart,
             1,
