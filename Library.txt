@@ -971,7 +971,7 @@ local UserID = game.Players.LocalPlayer.UserId
       end)
     
     local sections = {}
-    function sections:CraftPage(side)
+    function sections:CraftPage(side,size)
     
     if side == nil then
     return Left
@@ -990,7 +990,7 @@ local UserID = game.Players.LocalPlayer.UserId
     Section.Parent = GetType(side)
     Section.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
     Section.ClipsDescendants = true
-    Section.Size = UDim2.new(0, 240, 0, 343)
+    Section.Size = size or UDim2.new(0, 240, 0, 343)
     Section.BackgroundTransparency = 0
     UICorner_5.CornerRadius = UDim.new(0, 10)
     UICorner_5.Parent = Section
